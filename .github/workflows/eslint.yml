@@ -35,6 +35,12 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
+          echo "PNPM_HOME=$(dirname $(which pnpm))" >> $GITHUB_ENV
+          echo "$PNPM_HOME" >> $GITHUB_PATH  # 强制添加 pnpm 路径到 PATH
+
       - name: Cache pnpm store
         uses: actions/cache@v3
         with:
