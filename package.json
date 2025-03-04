@@ -1,12 +1,14 @@
 {
   "name": "vue3-ts-template",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "pnpm vite --host",
     "build": "pnpm vue-tsc -b && pnpm vite build",
-    "preview": "pnpm vite preview"
+    "preview": "pnpm vite preview",
+    "lint": "pnpm eslint --ext .ts,.vue src",
+    "lint:fix": "pnpm eslint --fix --ext .ts,.vue src"
   },
   "dependencies": {
     "vue": "^3.5.13"
