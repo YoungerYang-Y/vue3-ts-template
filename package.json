@@ -28,6 +28,7 @@
     "lint-staged": "^15.4.3",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.8.2",
+    "unplugin-auto-import": "^19.1.1",
     "unplugin-vue-components": "^28.4.1",
     "vite": "^6.2.1",
     "vue-tsc": "^2.2.8"
