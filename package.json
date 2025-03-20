@@ -26,6 +26,7 @@
     "@vue/tsconfig": "^0.7.0",
     "esbuild": "^0.25.1",
     "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
     "lint-staged": "^15.5.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.8.2",
