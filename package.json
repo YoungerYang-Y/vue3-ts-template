@@ -28,7 +28,7 @@
     "eslint": "^9.22.0",
     "eslint-plugin-format": "^1.0.1",
     "lint-staged": "^15.5.0",
-    "simple-git-hooks": "^2.11.1",
+    "simple-git-hooks": "^2.12.1",
     "typescript": "~5.8.2",
     "unplugin-auto-import": "^19.1.1",
     "unplugin-vue-components": "^28.4.1",
