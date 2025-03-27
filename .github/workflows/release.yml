@@ -19,7 +19,13 @@ jobs:
         with:
           node-version: 22.14.0
 
-      - run: npm ci  # 安装依赖
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Run semantic-release
         env:
