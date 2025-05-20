@@ -4,7 +4,7 @@
   
     // Auto fix
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "never",
+      "source.fixAll.eslint": "always",
       "source.organizeImports": "never"
     },
   
@@ -51,5 +51,13 @@
     "cSpell.words": [
       "unplugin"
     ],
-    "eslint.codeActionsOnSave.mode": "problems"
+    "eslint.codeActionsOnSave.mode": "problems",
+    "i18n-ally.localesPaths": [
+      "src/locales"
+    ],
+    "i18n-ally.extract.keyMaxLength": 20,
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.languageTagSystem": "legacy",
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.sourceLanguage": "en-US"
   }

@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
+import i18n from './locales/i18n'
 import './style.css'
 
 const router = createRouter({
@@ -11,5 +12,6 @@ const router = createRouter({
 })
 
 createApp(App)
+  .use(i18n as any)
   .use(router)
   .mount('#app')
