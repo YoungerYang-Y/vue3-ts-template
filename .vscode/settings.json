@@ -5,7 +5,7 @@
     // Auto fix
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "always",
-      "source.organizeImports": "always"
+      "source.organizeImports": "never"
     },
   
     // Silent the stylistic rules in you IDE, but still auto fix them
@@ -51,5 +51,13 @@
     "cSpell.words": [
       "unplugin"
     ],
-    "eslint.codeActionsOnSave.mode": "problems"
+    "eslint.codeActionsOnSave.mode": "problems",
+    "i18n-ally.localesPaths": [
+      "src/locales"
+    ],
+    "i18n-ally.extract.keyMaxLength": 20,
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.languageTagSystem": "legacy",
+    "i18n-ally.sortKeys": true,
+    "i18n-ally.sourceLanguage": "en-US"
   }
