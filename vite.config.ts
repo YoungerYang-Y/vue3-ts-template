@@ -1,3 +1,4 @@
+import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -34,4 +35,11 @@ export default defineConfig({
 
     Layouts(),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+      '@components': path.resolve(__dirname, './src/components'),
+      '@locales': path.resolve(__dirname, './src/locales'),
+    },
+  },
 })
