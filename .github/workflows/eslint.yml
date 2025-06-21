@@ -54,7 +54,7 @@ jobs:
           key: ${{ runner.os }}-pnpm-modules-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run ESLint
         env:
