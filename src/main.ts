@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
 import i18n from './locales/i18n'
-import './style.css'
+import './assets/css/style.css'
 
 const router = createRouter({
   history: createWebHistory(),
