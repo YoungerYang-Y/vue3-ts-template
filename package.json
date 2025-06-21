@@ -8,13 +8,18 @@
     "node": ">=22.14.0"
   },
   "scripts": {
-    "dev": "pnpm vite --host",
-    "build": "pnpm vue-tsc -b && pnpm vite build",
-    "preview": "pnpm vite preview",
-    "lint": "pnpm eslint . --ext .ts,.vue,.json",
-    "lint:fix": "pnpm eslint . --fix --ext .ts,.vue,.json",
-    "prepare": "husky",
-    "semantic-release": "semantic-release"
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.vue,.json",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --noEmit",
+    "dep:check": "pnpm dlx npm-check-updates",
+    "dep:update": "pnpm dlx npm-check-updates -u && pnpm install",
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run",
+    "release:ci": "pnpm run build && pnpm run release",
+    "prepare": "husky"
   },
   "dependencies": {
     "vue": "^3.5.17",
