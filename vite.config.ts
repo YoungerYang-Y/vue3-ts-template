@@ -2,6 +2,7 @@ import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import Inspector from 'unplugin-vue-inspector/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
@@ -44,6 +45,9 @@ export default defineConfig({
         initialIsOpen: false, // 初始不自动打开
       },
     }),
+
+    // https://github.com/antfu/vite-plugin-inspect
+    Inspector(),
   ],
   resolve: {
     alias: {
