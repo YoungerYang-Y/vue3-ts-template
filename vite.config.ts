@@ -5,6 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
+import checker from 'vite-plugin-checker'
 import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vite.dev/config/
@@ -34,6 +35,15 @@ export default defineConfig({
     }),
 
     Layouts(),
+
+    checker({
+      typescript: true, // 启用 TS 检查
+      vueTsc: true, // 启用 Vue 单文件组件检查
+      overlay: { // 错误显示配置
+        position: 'tr', // 位置：top-right
+        initialIsOpen: false, // 初始不自动打开
+      },
+    }),
   ],
   resolve: {
     alias: {
