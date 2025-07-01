@@ -36,20 +36,46 @@ vue3-ts-template
 
 ## Development Dependencies
 
+### Code Specification & Formatting
+
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config): eslint配置集
-- [@commitlint/cli](): git提交检查
-- [@commitlint/config-conventional](): git提交检查
-- [typescript](https://www.typescriptlang.org/): 强类型Javascript
-- [eslint](https://eslint.org/): 静态代码检查
-- [eslint-plugin-format](https://eslint.org/): 静态代码检查
-- [husky](https://github.com/typicode/husky): 提交代码时触发检查
-- [lint-staged](https://github.com/okonet/lint-staged): 提交代码时触发检查
+- [eslint](https://eslint.org/): 静态代码检查工具
+- [eslint-plugin-format](https://github.com/antfu/eslint-plugin-format): 代码格式化插件
+- [@microsoft/eslint-formatter-sarif](https://github.com/Microsoft/sarif-js-sdk): 格式报告生成器
+
+### Git commit specs
+
+- [@commitlint/cli](https://commitlint.js.org/): 提交消息校验工具
+- [@commitlint/config-conventional](https://commitlint.js.org/): 提交消息常规配置
+- [husky](https://github.com/typicode/husky): Git 钩子管理工具
+- [lint-staged](https://github.com/okonet/lint-staged): 对暂存区文件执行 Lint
+
+### Automate publishing
+
+- [semantic-release](https://semantic-release.gitbook.io/semantic-release): 全自动版本管理和包发布
+- [@semantic-release/changelog](https://semantic-release.gitbook.io/semantic-release): 自动生成变更日志
+- [@semantic-release/git](https://semantic-release.gitbook.io/semantic-release): 自动提交发布文件（如 CHANGELOG）
+
+### Vue development support
+
+- [@vitejs/plugin-vue](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue): 官方插件，提供 Vue 3 单文件组件支持。
 - [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import): 按需自动导入 API，减少重复代码
 - [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components): 按需自动导入 Vue 组件
-- [unplugin-vue-router](https://github.com/posva/unplugin-vue-router): 基于文件的自动路由
+- [unplugin-vue-router](https://github.com/posva/unplugin-vue-router): 基于文件的自动路由，Vue Router 的增强工具
+- [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts): Vue 布局系统支持
+- [vue-tsc](https://github.com/johnsoncodehk/vue-tsc): Vue 单文件的 TypeScript 类型检查
+
+### Debugging and development experience
+
+- [unplugin-vue-inspector](https://github.com/webfansplz/vite-plugin-vue-inspector)：Vue 组件调试工具
+- [vite-plugin-vue-inspector](https://github.com/webfansplz/vite-plugin-vue-inspector)：Vite 集成 Vue 调试插件
+- [vite-plugin-checker](): 开发时实时类型/语法检查（Vite）
+
+### Build the core of the tool
+
 - [vite](https://vitejs.dev/): 前端构建工具，快速搭建Vue项目
-- [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts): Vue布局插件
-- [vue-tsc](https://github.com/johnsoncodehk/vue-tsc): 静态类型检查
+- [@vue/tsconfig](): Vue 项目的 TypeScript 配置
+- [typescript](https://www.typescriptlang.org/): 强类型Javascript
 
 ## Project Setup
 
