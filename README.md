@@ -89,10 +89,12 @@ pnpm run dev
 # build for production with minification
 pnpm run build
 
+# lint
+pnpm run lint
+
+# check dependencies
+pnpm run dep:check
+
+# dry run release
+pnpm run release:dry-run
 ```
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/)
-- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
