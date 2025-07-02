@@ -38,12 +38,16 @@ vue3-ts-template
 
 ### Code Specification & Formatting
 
+| Wiki:[ESLint Rules](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/ESLint-Rules)
+
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config): eslint配置集
 - [eslint](https://eslint.org/): 静态代码检查工具
 - [eslint-plugin-format](https://github.com/antfu/eslint-plugin-format): 代码格式化插件
 - [@microsoft/eslint-formatter-sarif](https://github.com/Microsoft/sarif-js-sdk): 格式报告生成器
 
 ### Git commit specs
+
+| Wiki: [Best Practices](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/Best-Practices)
 
 - [@commitlint/cli](https://commitlint.js.org/): 提交消息校验工具
 - [@commitlint/config-conventional](https://commitlint.js.org/): 提交消息常规配置
