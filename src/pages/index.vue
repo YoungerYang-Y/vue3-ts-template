@@ -12,9 +12,9 @@
   </div>
   <HelloWorld msg="Vite + Vue" />
   <RouterLink to="/about">
-    <button>
+    <n-button>
       Go to about
-    </button>
+    </n-button>
   </RouterLink>
 </template>
 
