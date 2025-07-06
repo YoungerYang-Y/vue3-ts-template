@@ -6,9 +6,9 @@
     <h1>About</h1>
   </div>
   <RouterLink to="/">
-    <button>
+    <n-button>
       Go back index
-    </button>
+    </n-button>
   </RouterLink>
 </template>
 

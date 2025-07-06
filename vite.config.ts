@@ -1,6 +1,7 @@
 import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'
 import Inspector from 'unplugin-vue-inspector/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
@@ -23,6 +24,7 @@ export default defineConfig({
     // https://github.com/antfu/unplugin-vue-components
     Components({
       dts: 'src/types/components.d.ts',
+      resolvers: [NaiveUiResolver()],
     }),
 
     // https://github.com/antfu/unplugin-auto-import
