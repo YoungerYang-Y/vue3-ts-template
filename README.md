@@ -33,12 +33,13 @@ vue3-ts-template
 - [vue](https://cn.vuejs.org/): 渐进式Javascript框架
 - [vue-i18n](https://vue-i18n.intlify.dev/): Vue多语言插件
 - [vue-router](https://router.vuejs.org/zh/): Vue路由
+- [Naive UI](https://www.naiveui.com/zh-CN/os-theme): Vue 3 组件库
 
 ## Development Dependencies
 
 ### Code Specification & Formatting
 
-| Wiki:[ESLint Rules](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/ESLint-Rules)
+> Wiki:[ESLint Rules](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/ESLint-Rules)
 
 - [@antfu/eslint-config](https://github.com/antfu/eslint-config): eslint配置集
 - [eslint](https://eslint.org/): 静态代码检查工具
@@ -47,7 +48,7 @@ vue3-ts-template
 
 ### Git commit specs
 
-| Wiki: [Best Practices](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/Best-Practices)
+> Wiki: [Best Practices](https://github.com/YoungerYang-Y/vue3-ts-template/wiki/Best-Practices)
 
 - [@commitlint/cli](https://commitlint.js.org/): 提交消息校验工具
 - [@commitlint/config-conventional](https://commitlint.js.org/): 提交消息常规配置
