@@ -80,11 +80,11 @@ vue3-ts-template
 - [vite](https://vitejs.dev/): 前端构建工具，快速搭建Vue项目
 - [@vue/tsconfig](): Vue 项目的 TypeScript 配置
 - [typescript](https://www.typescriptlang.org/): 强类型Javascript
-- [less](https://lesscss.org/): CSS 预处理器
 
-### Component Library
+### CSS Preprocessor
 
-- [Naive UI](https://www.naiveui.com/zh-CN/os-theme): Vue 3 组件库
+- [Less](https://lesscss.org/): CSS 预处理器
+- [modern-normalize](https://github.com/csstools/normalize.css): CSS 样式重置
 
 ## Project Setup
 
