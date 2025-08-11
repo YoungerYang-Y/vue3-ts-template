@@ -44,7 +44,7 @@
     "modern-normalize": "^3.0.1",
     "semantic-release": "^24.2.6",
     "typescript": "~5.8.3",
-    "unplugin-auto-import": "^19.3.0",
+    "unplugin-auto-import": "^20.0.0",
     "unplugin-vue-components": "^28.8.0",
     "unplugin-vue-inspector": "^2.3.2",
     "unplugin-vue-router": "^0.14.0",
