@@ -1,5 +1,6 @@
 import type { AxiosError, AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
+import { clearToken, getToken } from './auth'
 
 // 响应数据接口
 export interface ApiResponse<T = any> {
@@ -22,7 +23,7 @@ const request: AxiosInstance = axios.create({
 request.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     // 添加token到请求头
-    const token = localStorage.getItem('token') || sessionStorage.getItem('token')
+    const token = getToken()
     if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`
     }
@@ -88,8 +89,7 @@ request.interceptors.response.use(
         case 401:
           errorMessage = '未授权，请重新登录'
           // 清除本地存储的token
-          localStorage.removeItem('token')
-          sessionStorage.removeItem('token')
+          clearToken()
           // 可以在这里添加跳转到登录页的逻辑
           // router.push('/login')
           break
