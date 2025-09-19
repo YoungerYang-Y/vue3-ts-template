@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { LoginForm } from '@/stores/user'
-import { NButton, NCard, NCheckbox, NDivider, NForm, NFormItem, NGrid, NGridItem, NInput, NSpace, useMessage } from 'naive-ui'
+import { NButton, NCard, NCheckbox, NForm, NFormItem, NGrid, NGridItem, NInput, useMessage } from 'naive-ui'
 
 import { reactive } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -58,7 +58,7 @@ async function handleLogin() {
   <div class="login-container">
     <NGrid :cols="24" :x-gap="0" class="login-grid">
       <!-- 左侧区域 - 品牌展示区 -->
-      <NGridItem :span="12" class="login-left">
+      <NGridItem :span="16" class="login-left">
         <div class="brand-section">
           <div class="brand-content">
             <div class="brand-logo">
@@ -80,16 +80,13 @@ async function handleLogin() {
       </NGridItem>
 
       <!-- 右侧区域 - 登录表单 -->
-      <NGridItem :span="12" class="login-right">
+      <NGridItem :span="8" class="login-right">
         <div class="form-section">
           <NCard class="login-card" :bordered="false">
             <div class="login-header">
               <h2 class="login-title">
                 用户登录
               </h2>
-              <p class="login-subtitle">
-                请输入您的登录凭据
-              </p>
             </div>
 
             <NForm
@@ -139,17 +136,6 @@ async function handleLogin() {
                 </NButton>
               </NFormItem>
             </NForm>
-
-            <NDivider class="login-divider">
-              <span class="divider-text">或</span>
-            </NDivider>
-
-            <div class="login-footer">
-              <NSpace justify="center">
-                <span class="footer-text">还没有账号？</span>
-                <a href="/register" class="register-link">立即注册</a>
-              </NSpace>
-            </div>
           </NCard>
         </div>
       </NGridItem>
@@ -176,7 +162,7 @@ async function handleLogin() {
 
 /* 左侧品牌区域 */
 .login-left {
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff4757 100%);
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,36 +273,38 @@ async function handleLogin() {
 
 .form-section {
   width: 100%;
-  max-width: 450px;
+  max-width: 380px;
 }
 
 .login-card {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  padding: 2.5rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   background: white;
+  width: clamp(320px, 28vw, 360px);
+  aspect-ratio: 1 / 1;
 }
 
 .login-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .login-title {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
 }
 
 .login-subtitle {
   color: #666;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .login-form {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .form-options {
@@ -339,7 +327,7 @@ async function handleLogin() {
 }
 
 .login-divider {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .divider-text {
@@ -398,8 +386,9 @@ async function handleLogin() {
   }
 
   .login-card {
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1rem;
+    width: clamp(300px, 70vw, 340px);
   }
 
   .login-title {
@@ -413,8 +402,9 @@ async function handleLogin() {
   }
 
   .login-card {
-    padding: 1rem;
+    padding: 0.75rem;
     margin: 0.5rem;
+    width: clamp(280px, 86vw, 320px);
   }
 
   .form-options {
@@ -422,5 +412,18 @@ async function handleLogin() {
     gap: 0.5rem;
     align-items: flex-start;
   }
+}
+
+/* 紧凑表单行距，保持更方正的观感 */
+:deep(.n-form-item) {
+  display: block;
+}
+
+:deep(.login-form .n-input) {
+  --n-height: 40px;
+}
+
+:deep(.login-form .n-button) {
+  --n-height: 44px;
 }
 </style>
