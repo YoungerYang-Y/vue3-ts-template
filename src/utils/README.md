@@ -8,7 +8,6 @@
 src/utils/
 ├── request.ts      # axios 实例配置和拦截器
 ├── http.ts         # HTTP 方法封装
-├── api-example.ts  # 使用示例
 └── README.md       # 说明文档
 ```
 
