@@ -1,4 +1,4 @@
-import http from './http'
+import http from '../utils/http.ts'
 
 // API使用示例
 export class ApiExample {
