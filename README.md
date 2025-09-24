@@ -15,9 +15,12 @@ vue3-ts-template
 │   ├── assets          # 静态资源
 │   ├── components      # 组件
 │   ├── layouts         # 布局
-│   ├── locales         # i18n
+│   ├── locales         # 国际化
 │   ├── pages           # 页面
+│   ├── router          # 路由
+│   ├── stores          # 状态管理
 │   ├── types           # 类型声明
+│   ├── utils           # 工具类
 │   ├── App.vue
 │   └── main.ts
 ├── .gitignore
