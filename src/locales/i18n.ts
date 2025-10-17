@@ -10,7 +10,7 @@ const messages = {
 
 const i18n = createI18n({
   legacy: false, // 使用 Composition API 模式
-  locale: 'ch-US', // 默认语言
+  locale: 'zh-CN', // 默认语言
   fallbackLocale: 'en-US', // 备用语言
   messages,
 })
