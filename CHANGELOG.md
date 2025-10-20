@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/YoungerYang-Y/vue3-ts-template/compare/v1.4.0...v1.4.1) (2025-10-20)
+
+
+### Bug Fixes
+
+* **i18n:** 默认语言错误 ([838d987](https://github.com/YoungerYang-Y/vue3-ts-template/commit/838d98778e38e762e48988bfe6a6a01809e4ad03))
+
 # [1.4.0](https://github.com/YoungerYang-Y/vue3-ts-template/compare/v1.3.0...v1.4.0) (2025-09-19)
 
 
