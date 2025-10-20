@@ -44,7 +44,7 @@
     "less": "^4.4.2",
     "lint-staged": "^16.2.3",
     "modern-normalize": "^3.0.1",
-    "semantic-release": "^24.2.9",
+    "semantic-release": "^25.0.1",
     "typescript": "~5.9.3",
     "unplugin-auto-import": "^20.2.0",
     "unplugin-vue-components": "^30.0.0",
